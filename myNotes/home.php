@@ -14,7 +14,7 @@ class DB
 
     private function __construct()
     {
-        $this->_db = pg_connect(...); //postgrsql;
+        $this->_db = pg_connect(); //postgrsql;
     }
 
     /**

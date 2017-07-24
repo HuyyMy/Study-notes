@@ -1,0 +1,6 @@
+1，首先去http://www.runoob.com/memcached/window-install-memcached.html下载安装包，该网页下有下载步骤；
+2，运行memcached.exe -d install命令时，一定要用管理员身份运行否则会报：
+failed to install service or service already installed
+3，运行成功后连接memcached时可能会报：'telnet' 不是内部或外部命令，也不是可运行的程序 或批处理文件。
+这时候可以打开“控制面板”，找到“程序”，然后点击“启用或关闭Windows功能”，勾选“Telnet客户端”，点击确定
+4，这时候就可以连接memached了
