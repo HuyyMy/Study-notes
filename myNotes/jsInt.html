@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function validation() {
+            var val = document.getElementById("txtNumber").value;
+            var regu = /^[1-9]\d*$/;
+            //var regu = /^([1-9][0-9]*){1,3}$/;  亲测可用
+            //var regu = /^\+?[1-9][0-9]*$/;  亲测可用
+            if (val != "") {
+                if (!regu.test(val)) {
+                    document.getElementById("labResult").style.color = "red";
+                    document.getElementById("labResult").innerHTML = "验证失败！";
+                } else {
+                    document.getElementById("labResult").style.color = "green";
+                    document.getElementById("labResult").innerHTML = "验证成功！";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="txtNumber" name="txtNumber" type="text" />
+<input id="btnValidation" name="btnValidation" type="button" value="校验" onclick="validation()" />
+验证结果：<label id="labResult" ></label>
+</body>
+</html>
