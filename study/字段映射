@@ -1,0 +1,18 @@
+一，在TP框架中，使用字段映射可以隐藏数据表中的字段，防止把真正的字段名暴露给用户。
+例如我们User表中的username和password字段，我们可以映射成另外的字段，如下：
+
+namespace Home\Model;
+use Think\Model;
+Class UserModel extends Model{
+     protected $_map = array(
+         'name' =>'username', // 把表单中name映射到数据表的username字段
+         'pwd'  =>'password', // 把表单中的mail映射到数据表的email字段
+     );
+}
+
+当使用表单提交时，会自动转换成定义的实际数据表字段。
+
+二，当我们修改数据表中的某个字段时，不用修改全部的字段，只需要修改映射的地方。
+
+三 ，但是也要注意，如果一个团队开发时，如果要使用字段映射，必须都要使用，否则会报错：
+Info：Column \'student_name\' doesn\'t make part of the column map。
