@@ -1,0 +1,21 @@
+书写Sql语句的一些注意点：
+
+1,SQL语句必须以(;)结束;
+    如果忘记添加分号，会在MySql客户端显示：mysql>SELECT * FROM customer ->。
+    没有添加分号，客户端认为SQL语句没有结束，显示【->】等待用户继续输入。
+2,保留关键字不区分大小写；
+    mysql> select * FROM user;
+    mysql> SELECT * FROM user;
+    mysql> sElecT * FROM user;
+    但一般会以大写字母写保留关键字，以小写字母写表或列名，这样SQL语句一目了然。
+3,可以自由加入空白或换行符，但在保留关键字中不行
+    true：
+        mysql> select
+         * FROM
+         user;
+    false：
+        mysql> sel
+        ect * FR
+        OM user;
+
+4,注释用--或者/*--*/
