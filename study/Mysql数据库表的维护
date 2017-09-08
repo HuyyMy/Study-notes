@@ -1,0 +1,13 @@
+一个表的创建工作不是一步完成的，经常会因为业务的变化而要对表的结构进行修改。
+MySQL数据库提供了修改表的命令。
+
+ALERT TABLE 命令：
+    ALERT TABLE命令是用来修改表结构的，通常有以下几种语法：
+    ●ALERT TABLE...MODIFY：修改列；
+    ALERT TABLE user（表名）MODIFY password VARCHAR(30):
+    ●ALERT TABLE...ADD：追加列；
+    ALERT TABLE user ADD sex INT:
+    ●ALERT TABLE...CHANGE：修改列的名称与定义；
+    ALERT TABLE user CHANGE birth birthday DATE:
+    ●ALERT TABLE...DROP：删除列；
+    ALERT TABLE user DELETE sex:
