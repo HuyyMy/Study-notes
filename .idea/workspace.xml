@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2262d9-679a-4af5-bfd7-eab00dfc22f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/.idea/MySql数据库使用索引" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/getFunc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Myself.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,8 +112,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
-    <option name="y" value="98" />
+    <option name="x" value="-80" />
+    <option name="y" value="373" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -237,15 +239,15 @@
       <workItem from="1504057940814" duration="43000" />
       <workItem from="1504853178343" duration="1518000" />
       <workItem from="1505115522934" duration="1018000" />
-      <workItem from="1506665822360" duration="1101000" />
+      <workItem from="1506665822360" duration="1693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19885000" />
+    <option name="totallyTimeSpent" value="20477000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="98" width="1924" height="1056" extended-state="0" />
+    <frame x="-80" y="373" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25995806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
