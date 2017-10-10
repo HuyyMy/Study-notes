@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/study/magic.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="736">
-              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -262,15 +262,15 @@
       <workItem from="1505115522934" duration="1018000" />
       <workItem from="1506665822360" duration="1693000" />
       <workItem from="1506764523440" duration="338000" />
-      <workItem from="1507623476850" duration="2232000" />
+      <workItem from="1507623476850" duration="2403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23047000" />
+    <option name="totallyTimeSpent" value="23218000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-101" y="78" width="1924" height="1056" extended-state="0" />
+    <frame x="-101" y="78" width="1924" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25943395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -728,7 +728,7 @@
     <entry file="file://$PROJECT_DIR$/study/magic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
-          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding />
         </state>
       </provider>
