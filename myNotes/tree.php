@@ -8,5 +8,4 @@
 
 function getTree (array $array, $index = '')
 {
-132132
 }
