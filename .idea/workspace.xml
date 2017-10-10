@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2262d9-679a-4af5-bfd7-eab00dfc22f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myNotes/.gitignore" afterPath="$PROJECT_DIR$/myNotes/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/.gitignore" afterPath="$PROJECT_DIR$/study/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/magic.php" afterPath="$PROJECT_DIR$/study/magic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myNotes/tree.php" afterPath="$PROJECT_DIR$/myNotes/tree.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tree.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tree.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myNotes/tree.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="190">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
                 <element signature="e#6#82#0#PHP" expanded="true" />
               </folding>
@@ -105,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myNotes/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -135,7 +131,6 @@
       <list>
         <option value="$PROJECT_DIR$/myNotes/home.php" />
         <option value="$PROJECT_DIR$/myNotes/adapter.php" />
-        <option value="$PROJECT_DIR$/myNotes/tree.php" />
         <option value="$PROJECT_DIR$/study/SQL语句" />
         <option value="$PROJECT_DIR$/study/Tree.php" />
         <option value="$PROJECT_DIR$/study/Mysql数据库表的维护" />
@@ -145,6 +140,7 @@
         <option value="$PROJECT_DIR$/study/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/myNotes/.gitignore" />
+        <option value="$PROJECT_DIR$/myNotes/tree.php" />
       </list>
     </option>
   </component>
@@ -299,12 +295,12 @@
       <workItem from="1505115522934" duration="1018000" />
       <workItem from="1506665822360" duration="1693000" />
       <workItem from="1506764523440" duration="338000" />
-      <workItem from="1507623476850" duration="3058000" />
+      <workItem from="1507623476850" duration="3134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23873000" />
+    <option name="totallyTimeSpent" value="23949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="718" y="201" width="1924" height="1056" extended-state="0" />
@@ -684,16 +680,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myNotes/.idea/tree.php" />
-    <entry file="file://$PROJECT_DIR$/myNotes/tree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#82#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/study/SQL语句">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -765,6 +751,16 @@
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myNotes/tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#6#82#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
