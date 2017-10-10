@@ -8,4 +8,5 @@
 
 function getTree (array $array, $index = '')
 {
+    echo '45144654654';
 }
