@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/study/magic.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="736">
-              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -119,8 +119,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-101" />
-    <option name="y" value="78" />
+    <option name="x" value="97" />
+    <option name="y" value="64" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -262,15 +262,15 @@
       <workItem from="1505115522934" duration="1018000" />
       <workItem from="1506665822360" duration="1693000" />
       <workItem from="1506764523440" duration="338000" />
-      <workItem from="1507623476850" duration="2780000" />
+      <workItem from="1507623476850" duration="2835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23595000" />
+    <option name="totallyTimeSpent" value="23650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-101" y="78" width="1924" height="1056" extended-state="0" />
+    <frame x="97" y="64" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25943395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -728,7 +728,7 @@
     <entry file="file://$PROJECT_DIR$/study/magic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
-          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>
