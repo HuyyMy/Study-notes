@@ -1,0 +1,9 @@
+Composer是PHP使用的非常广泛的包管理工具。可以很方便的实现依赖包的管理、安装、更新、和自动加载。
+
+一.Composer安装（Linux，Windows请自行搜索）：
+    1.局部安装：
+        curl -sS https://getcomposer.org/installer | php
+    2.全局安装：
+        curl -sS https://getcomposer.org/installer | php
+        mv composer.phar /usr/local/bin/composer
+二. 我们可以使用php composer.phar命令来检测Composer是否正常工作。
