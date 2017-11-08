@@ -19,3 +19,15 @@
         OM user;
 
 4,注释用--或者/*--*/
+
+5.查询重复的数据：
+1 ， SELECT COUNT(title) as num , title FROM system_center.sc_notices GROUP BY title
+
+    HAVING COUNT(*) > 1 ORDER BY num ASC;
+
+2， SELECT * FROM system_center.sc_notices AS a
+
+    WHERE a.title IN (
+
+    SELECT title FROM system_center.sc_notices GROUP BY title HAVING COUNT(*) > 1
+    );
