@@ -1,0 +1,21 @@
+1. MySQL的索引是在B树中存储的。
+  建一个表：
+    CREATE TABLE `merchant` (
+      `id` char(32) NOT　NULL AUTO_INCREMENT COMMENT '主键ID',
+      `merchant_id` char(32) NOT NULL COMMENT '商家ID',
+      `platform_version_id` char(32) NOT NULL COMMENT '平台版本ID',
+      `name` varchar(128) NOT NULL COMMENT '商家平台名称',
+      `describe` text NOT NULL COMMENT '商家平台描述',
+      `url` varchar(256) DEFAULT NULL COMMENT '商家平台URL',
+      PRIMARY KEY ('id'),
+      KEY `merchant_id` (`merchant_id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商家授权平台关系表';
+
+    其中，KEY是数据库的物理结构，有两个作用：
+    ● 约束（偏重于约束和规范数据库的结构完整性）；
+    ● 索引（辅助查询用的）；
+
+    ● 索引包括PRIMARY KEY, UNIQUE KEY, FOREIGN KEY 等。
+    ● PRIMARY KEY 拥有自动定义的 UNIQUE 约束。
+    ● 每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。
+    ● 主键必须包含唯一的值且主键列不能包含 NULL 值。
