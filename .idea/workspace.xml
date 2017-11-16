@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2262d9-679a-4af5-bfd7-eab00dfc22f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/bubble.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/king.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/quickly.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/study/bubble.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
               </folding>
@@ -323,15 +320,15 @@
       <workItem from="1510558659719" duration="2170000" />
       <workItem from="1510653688385" duration="1352000" />
       <workItem from="1510724742383" duration="6727000" />
-      <workItem from="1510814677951" duration="4893000" />
+      <workItem from="1510814677951" duration="5489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48983000" />
+    <option name="totallyTimeSpent" value="49579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-134" y="26" width="1924" height="996" extended-state="0" />
+    <frame x="-134" y="26" width="1924" height="996" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0932914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -702,7 +699,7 @@
     <entry file="file://$PROJECT_DIR$/study/bubble.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
           </folding>
