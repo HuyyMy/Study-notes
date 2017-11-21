@@ -24,10 +24,16 @@
 1 ， SELECT COUNT(title) as num , title FROM system_center.sc_notices GROUP BY title
 
     HAVING COUNT(*) > 1 ORDER BY num ASC;
-
+// select count(name) as num , name form user group by name having count(*) > 1 order by num desc;
 2， SELECT * FROM system_center.sc_notices AS a
 
     WHERE a.title IN (
 
     SELECT title FROM system_center.sc_notices GROUP BY title HAVING COUNT(*) > 1
+    );
+
+    // select * from user as a  where a.name in (
+
+    select name from user group by name having count(*) > 1
+
     );

@@ -20,14 +20,13 @@ function bubble_increment($array){
                 $array[$j-1] = $tmp;
             }
         }
-}
+    }
     return $array;
 }
 
 function bubble($array)
 {
     $num = count($array);
-
     if ($num <= 0) {
         return false;
     }
@@ -35,16 +34,15 @@ function bubble($array)
     for ($i = 0; $i < $num; $i++) {
         for ($j = $num - 1; $j > $i; $j--) {
             if ($array[$j] > $array[$j - 1]) {
-                $_array = $array[$j];
-                $array[$j] = $array[$j-1];
-                $array[$j - 1] = $_array;
+                $tmp = $array[$j - 1];
+                $array[$j - 1] = $array[$j];
+                $array[$j] = $tmp;
             }
         }
     }
 
     return $array;
 }
-
 
 var_dump(bubble([2,1,5,6,7,23,11]));
 //此时输出：

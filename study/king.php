@@ -5,7 +5,7 @@
  * Date: 2017/11/15
  * Time: 14:40
  */
-phpinfo();
+
 // 方案一，使用php来模拟这个过程
 function king($n){
     $monkey = range(1, $n);
@@ -44,3 +44,19 @@ function monkey($n)
 }
 
 echo monkey(4);
+
+function monkeyKing($n)
+{
+    $monkey = range(1, $n);
+    $i = 0;
+
+    while (count($monkey) > 1) {
+        $i += 1;
+        $head = array_shift($monkey);
+        if ($i % 3 != 0) {
+            array_push($monkey, $head);
+        }
+
+        return $monkey[0];
+    }
+}

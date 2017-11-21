@@ -50,6 +50,29 @@ function quick($array)
     }
 }
 
+function quickly($array) {
+    if (count($array)) {
+        $k = $array[0];
+        $x = [];
+        $y = [];
+        $num = count($array);
+
+        for ($i = 1; $i < $num; $i++) {
+            if ($array[$i] <= $k) {
+                $x[] = $array[$i];
+            } elseif ($array[$i] > $num) {
+                $y[] = $array[$i];
+            }
+        }
+
+        $x = quickly($x);
+        $y = quickly($y);
+        return array_merge($x, array($k), $y);
+    } else {
+        return $array;
+    }
+}
+
 var_dump(quick([1,3,2,5,4,11,33,9]));
 /**
  * 输出：array(8) {
