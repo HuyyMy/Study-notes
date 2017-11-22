@@ -69,8 +69,9 @@ echo '<br>';
 // {n,} : 至少匹配n个前面的字符。
 // {n,m} : 至少匹配n个至多匹配m个前面的字符。
 $str = 'I am susususususuperman';
-var_dump(preg_match('/(su){2,}/', $str));
+var_dump(preg_match('/(su){2,}/', $str, $content));
 var_dump(preg_match('/(su){2,3}/', $str));
+var_dump($content);
 echo '<br>';
 
 // [] : 一个字符列表，匹配列中出现的任一字符
