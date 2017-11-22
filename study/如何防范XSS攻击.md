@@ -7,6 +7,6 @@
     
 **如何防范XSS攻击**
 
-    1）针对于盗取cookie的XSS攻击，可以将cookie设置为http only;
+    1）针对于盗取cookie的XSS攻击，可以将cookie设置为 http only;
       
     2） 对于一般的输出可以使用htmlspecialchars过滤。
