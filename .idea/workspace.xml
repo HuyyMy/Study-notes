@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a2262d9-679a-4af5-bfd7-eab00dfc22f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/如何防范XSS攻击.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/regular.php" afterPath="$PROJECT_DIR$/study/regular.php" />
-    </list>
+    <list default="true" id="7a2262d9-679a-4af5-bfd7-eab00dfc22f6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -336,12 +332,12 @@
       <workItem from="1511231708436" duration="14539000" />
       <workItem from="1511313900928" duration="862000" />
       <workItem from="1511317295656" duration="503000" />
-      <workItem from="1511318981866" duration="792000" />
+      <workItem from="1511318981866" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66275000" />
+    <option name="totallyTimeSpent" value="66492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="196" y="173" width="1924" height="996" extended-state="0" />
