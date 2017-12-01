@@ -25,6 +25,7 @@
 
     HAVING COUNT(*) > 1 ORDER BY num ASC;
 // select count(name) as num , name form user group by name having count(*) > 1 order by num desc;
+select count(name) as num, name from user group by name having count(*) > 1 orer by num desc;
 2， SELECT * FROM system_center.sc_notices AS a
 
     WHERE a.title IN (

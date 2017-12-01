@@ -38,5 +38,5 @@ $person->say();
 $person = new Person('hyy','二十三','man');
 $person->say();
 /**
- * 此时输出：我是hyy,我的性别是man,今年二十三岁了  mmp cao。
+ * 此时输出：我是hyy,我的性别是man,今年二十三岁了。
  */

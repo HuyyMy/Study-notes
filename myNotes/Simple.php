@@ -6,7 +6,7 @@
  * Date: 2017/7/24
  * Time: 9:52
  */
-phpinfo();die;
+
 class A
 {
     static function foo()
