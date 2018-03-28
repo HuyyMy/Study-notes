@@ -60,3 +60,5 @@ $deque->addLast(3);
 $deque->addLast(4);
 $deque->addFirst(5);
 $deque->show();
+
+// 结果 ：5 2 3 4 
