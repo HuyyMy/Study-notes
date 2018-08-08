@@ -22,6 +22,8 @@ class Test
         // TODO: Implement __invoke() method.
         echo 'here is '.$name;
     }
+
+
 }
 $obj = new Test('hyy', 18);
 echo $obj;
