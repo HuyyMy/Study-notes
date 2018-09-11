@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="vue_det">
+
+        <h1>{{details()}}</h1>
+    </div>
+
+</body>
+<script  type="text/javascript">
+    var vm = new Vue({
+        el: '#vue_det',
+        data: {
+            site: '胡月阳',
+            url: 'www.yyh.com',
+            alexa: '10000'
+        },
+        methods: {
+            details: function () {
+                return this.site + " - 是个好人";
+            }
+        }
+    })
+</script>
+</html>

@@ -61,7 +61,7 @@ unset($obj->both);
 echo '<br/>';
 echo isset($obj->both);
 
-//输出：
+//输出:
 //I'm huyy, my age is 18
 //huyy
 //No
