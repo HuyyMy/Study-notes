@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<style>
+    .class1{
+        background: #444;
+        color: brown;
+    }
+</style>
+<body>
+    <div id="vue_det">
+        <h1>name:{{name}}</h1>
+        <h1>age:{{age}}</h1>
+        <h1>gender:{{gender}}</h1>
+        <h1>remark:{{details()}}</h1>
+    </div>
+<div id="app">
+    <!-- v-html:用于输出HTML代码-->
+    <div v-html="msg"></div>
+</div>
+
+<div id="demo">
+    <!-- HTML 属性中的值应使用 v-bind 指令。
+判断 class1 的值，如果为 true 使用 class1 类的样式，否则不使用该类样式 -->
+    <!--  v-bind 指令被用来响应地更新 HTML 属性 缩写为 : -->
+    <label for="r1">改变颜色</label><input type="checkbox" v-model="class1" id="r1">
+    <div v-bind:class="{'class1':class1}">
+        msg:{{msg}}
+    </div>
+</div>
+
+<div id="example">
+    name：<input type="text" v-model="msg">
+    <div v-bind:id="'list-' + id">huyy</div>
+    <p v-if="seen">seen值为true时显示，为false时隐藏</p>
+</div>
+
+<div id="demo1">
+    <p>{{msg}}</p>
+    <!-- 使用 v-on 监听事件，并对用户的输入进行响应 缩写为@-->
+    <button v-on:click="txtMsg">改变</button>
+</div>
+</body>
+<script  type="text/javascript">
+    var jsonData = {name:"hyy", age:"18", gender:"男"}
+    new Vue({
+        el: '#vue_det',
+        data: jsonData,
+        methods: {
+            details: function () {
+                return this.name + " - 是个好人";
+            }
+        }
+    })
+
+    new Vue({
+        el: '#app',
+        data: {
+            msg:'<h1>天不生夫子，PHP万古如长夜</h1>'
+        }
+    })
+
+    new Vue({
+        el: '#demo',
+        data: {
+            class1:false,
+            msg:'我是红色'
+        }
+    })
+
+    new Vue({
+        el: '#example',
+        data: {
+            id:1,
+            msg:'报哪好',
+            seen:false
+        }
+    })
+
+    new Vue({
+        el: '#demo1',
+        data: {
+            msg:'hyy'
+        },
+
+        methods: {
+            txtMsg:function () {
+                alert(this.msg)
+            }
+
+        }
+    })
+</script>
+</html>
