@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <style>
+        .active{
+            width:666px;
+            height: 111px;
+            background: gold;
+        }
+        .error-text{
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <button @click="count += 1">点击</button>
+        <p>点{{count}}</p>
+    </div>
+    <br />
+<div id="demo1">
+    <button v-on:click="greet">提交</button>
+</div>
+
+<div id="demo2">
+    <button v-on:click="say('hyy')">say hyy</button>
+    <button @click="say('yyh')">say yyh</button>
+</div>
+
+</body>
+<script  type="text/javascript">
+    new Vue({
+        el: '#demo',
+        data: {
+            count:0
+        }
+    })
+
+    new Vue({
+        el: '#demo1',
+        data:{
+            name:'Vue.js'
+        },
+        methods:{
+            greet:function (message) {
+                alert('Hello, ' + this.name + ' !')
+
+                if (message) {
+                    alert(event.target.tagName);
+                }
+            }
+        }
+    })
+
+    new Vue({
+        el:'#demo2',
+        methods: {
+            say:function (msg) {
+                alert(msg)
+            }
+        }
+    })
+</script>
+</html>

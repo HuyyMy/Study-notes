@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <!-- 循环使用 v-for 指令, 需要以 site in sites 形式的特殊语法， sites 是源数据数组并且 site 是数组元素迭代的别名  -->
+       <ul v-for="site in sites">
+           <li>{{site.name}}</li>
+           <li>{{ site.age }}</li>
+           <li>{{ site.gender }}</li>
+       </ul>
+        <ul v-for="(site, key) in sites">
+           <li>{{key}}:{{site.name}}</li>
+           <li>{{ site.age }}</li>
+           <li>{{ site.gender }}</li>
+       </ul>
+    </div>
+
+</body>
+<script  type="text/javascript">
+    var vm = new Vue({
+        el: '#demo',
+        data: {
+            sites:[
+                {name: '胡月阳', age:'18',gender:'男'},
+                {name: '奥特曼', age:'188888',gender:'男'},
+                {name: '孙悟空', age:'18999999999',gender:'男'}
+            ]
+        }
+    })
+</script>
+</html>

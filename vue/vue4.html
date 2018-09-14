@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <style>
+        .active{
+            width:666px;
+            height: 111px;
+            background: gold;
+        }
+        .error-text{
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <div :class="[activeClass, errorClass]"></div>
+    </div>
+    <br />
+    <div id="demo1">
+        <div :class="textClass"></div>
+    </div>
+    <br>
+    <div id="demo2">
+        <div :class="textClass"></div>
+    </div>
+
+</body>
+<script  type="text/javascript">
+    new Vue({
+        el: '#demo',
+        data: {
+            activeClass: 'active',
+            errorClass:  'error-text'
+        },
+        computed:{
+
+        }
+    })
+
+    new Vue({
+        el:'#demo1',
+        data: {
+            textClass:{
+                active:true,
+                'error-text':true
+            }
+        }
+    })
+
+    var vm = new Vue({
+        el: '#demo2',
+        data: {
+            isActive:true,
+            error:null,
+
+        },
+        computed:{
+            textClass:function () {
+                alert(1)
+                return {
+                    active:this.isActive && !this.error,
+                    'error-text':this.error && this.error.type === 'fatal',
+                }
+
+            },
+
+        },
+
+    })
+</script>
+</html>
