@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    姓名：<input type="text" v-model="name">
+    <br>
+    消息：<textarea v-model="msg">{{msg}}</textarea>
+</div>
+
+<div id="demo1">
+    单个：<input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">{{checked}}</label>
+    <br>
+    多个：<input type="checkbox" value="baidu" id="baidu" v-model="checkArr">
+
+    <input type="checkbox" value="firefox" id="firefox" v-model="checkArr">
+
+    <input type="checkbox" value="chrome" id="chrome" v-model="checkArr">
+    <label for="chrome">{{checkArr}}</label>
+</div>
+
+<div id="demo2">
+    <input type="radio" id="baidu1" value="Baidu" v-model="picked">
+    <label for="baidu1">baidu</label>
+    <br>
+    <input type="radio" id="chrome1" value="Chrome" v-model="picked">
+    <label for="chrome1">chrome</label>
+    <br>
+    <span>选中：{{picked}}</span>
+</div>
+
+<div id="demo3">
+    <select name="fruit" v-model="selected" id="">
+        <option value="">选择</option>
+        <option value="www.huyy.com">Hyy</option>
+        <option value="www.baidu.com">Baidu</option>
+    </select>
+
+    <div>
+        选择：{{selected}}
+    </div>
+</div>
+</body>
+<script  type="text/javascript">
+ new Vue({
+     el: '#demo',
+     data:{
+         name:'hyy',
+         msg: '欢迎来到英雄联盟'
+     }
+ })
+
+    new Vue({
+        el: '#demo1',
+        data:{
+            checked: false,
+            checkArr: []
+        }
+    })
+
+    new Vue({
+        el: '#demo2',
+        data:{
+            picked:'baidu'
+        }
+    })
+
+    new Vue({
+        el:'#demo3',
+        data:{
+            selected:''
+        }
+    })
+</script>
+</html>

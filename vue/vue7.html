@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    多个：<input type="checkbox" value="baidu" id="baidu" v-model="checkArr">
+
+    <input type="checkbox" value="firefox" id="firefox" v-model="checkArr">
+
+    <input type="checkbox" value="chrome" id="chrome" v-model="checkArr">
+    单个：<input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">{{checked}}</label>
+    <label for="chrome">{{checkArr}}</label>
+</div>
+</body>
+<script  type="text/javascript">
+ new Vue({
+     el: '#demo',
+     data:{
+         checked: false,
+         checkedNames: [],
+         checkedArr:[]
+     }
+ })
+</script>
+</html>

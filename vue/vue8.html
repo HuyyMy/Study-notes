@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    <bxf></bxf>
+    <tem></tem>
+</div>
+
+<div id="demo1">
+    <app msg="huyy"></app>
+</div>
+
+<div id="demo2">
+    <div>
+        <input type="text" v-model="parentMsg">
+        <br>
+        <app :msg="parentMsg"></app>
+    </div>
+</div>
+</body>
+<script  type="text/javascript">
+    var Child = {
+        template: '<h1> 使用组件</h1>'
+    }
+    Vue.component('bxf', {
+        template: '<h2>自定义组件</h2>'
+    })
+ new Vue({
+     el: '#demo',
+     components: {
+         'tem': Child
+     }
+ })
+
+    Vue.component('app', {
+        props: ['msg'],
+        template: '<span>{{ msg }}</span>'
+    })
+
+    new Vue({
+        el: '#demo1'
+    })
+
+    Vue.component('app1', {
+        props: ['msg'],
+        template: '<span> huyy </span>'
+    })
+
+    new Vue({
+        el: '#demo2',
+        data: {
+            parentMsg: 'husdhusdh'
+        }
+    })
+</script>
+</html>
