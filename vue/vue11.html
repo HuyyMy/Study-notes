@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.yangfeishidoubi.com</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="demo">
+    <h1> Hello</h1>
+    <p>
+        <router-link to="/foo">Question</router-link>
+        <router-link to="/bar">Answer</router-link>
+        <router-view></router-view>
+    </p>
+</div>
+</body>
+<script  type="text/javascript">
+    const Foo = {template: '<div> <h1>我们的口号是？</h1> </div>'}
+    const Bar = {template: '<div> 吃瓜群众：是，是，是 </div>'}
+
+    const routes = [
+        {path: '/foo', component: Foo},
+        {path: '/bar', component: Bar}
+    ]
+
+    const router =new VueRouter({
+        routes
+    })
+
+    const app = new Vue({
+        router
+    }).$mount('#demo')
+</script>
+</html>

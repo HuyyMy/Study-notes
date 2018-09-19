@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.yangfeishidoubi.com</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+</div>
+</body>
+<script  type="text/javascript">
+    var vm = new Vue({
+        el: '#demo',
+        data: {
+
+        },
+        methods: {
+
+        }
+    });
+
+    var myMixin = {
+        created: function () {
+            this.startmixin()
+        },
+        methods: {
+            startmixin: function () {
+                document.write('欢迎来到英雄联盟！')
+            }
+        }
+    }
+
+    var Component = Vue.extend({
+        mixins: [myMixin]
+    })
+
+    var component = new Component();
+
+</script>
+</html>

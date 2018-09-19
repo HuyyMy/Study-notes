@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    <input type="text" v-focus>
+</div>
+
+<div id="demo1">
+    <input type="text" v-huyy>
+</div>
+</body>
+<script  type="text/javascript">
+   Vue.directive('focus', {
+       // 当绑定元素插入到DOM中
+       inserted: function (el) {
+           el.focus()
+       }
+   })
+
+    new Vue({
+        el: '#demo'
+    })
+
+    new Vue({
+        el: '#demo1',
+        directives:{
+            huyy: {
+                inserted: function (el) {
+                    el.focus()
+                }
+            }
+        }
+    })
+</script>
+</html>
