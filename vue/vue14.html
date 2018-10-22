@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.yangfeishidoubi.com</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src=" https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    <input type="button" @click="get()" value="点击">
+</div>
+</body>
+<script  type="text/javascript">
+window.onload = function (ev) {
+    const axios = require('axios')
+    axios.get('./test.php?name=hyy')
+    var vm = new Vue({
+        el: '#demo',
+        data:{
+            msg: 111
+        },
+        methods: {
+
+        }
+    })
+}
+</script>
+</html>

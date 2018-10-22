@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.yangfeishidoubi.com</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    <input type="button" @click="getInfo()" value="点击">
+</div>
+</body>
+<script  type="text/javascript">
+    window.onload = function (ev) {
+        var vm = new Vue({
+            el: '#demo',
+            data: {
+                msg: 'Welcome to VUE '
+            },
+            methods:{
+                getInfo:function () {
+                    // 发送get请求
+                    this.$http.get('./ajax_info.txt').then(function (value) {
+                        console.info(value);
+                        document.write(value.body);
+                        document.write(value.bodyText);
+                    }, function (reason) {
+                        console.log(reason);
+                    })
+                }
+            }
+        })
+    }
+</script>
+</html>
