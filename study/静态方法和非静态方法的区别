@@ -1,0 +1,95 @@
+在PHP5.6下,静态方法调用非静态属性：
+
+    class Test
+    {
+        public $pi = 3.14;
+        public static $p  = 3.14;
+    
+        public static function test()
+        {
+            echo $this->pi;
+        }
+    }
+
+
+    Test::test();
+    //此时：Fatal error: Constructor Test::test() cannot be static in E:\hyy\demo3.php on line 18
+
+当静态方法调用非静态方法时：
+    
+    class Test1
+    {
+        public $pi = 3.14;
+        public static $p  = 3.14;
+    
+        public static function test()
+        {
+            echo self::$p.PHP_EOL;
+        }
+    
+        public function test1()
+        {
+            echo self::$p;
+        }
+    
+        public static function test2()
+        {
+           echo $this->test1();
+        }
+    }
+    
+    Test1::test2();
+    此时：Fatal error: Using $this when not in object context in E:\hyy\demo3.php on line 40
+
+当非静态方法调用静态方法或属性时：
+
+     class Test
+        {
+            public $pi = 3.14;
+            public static $p  = 3.14;
+        
+            public static function test()
+            {
+                echo self::$p;
+            }
+        
+            public function test1()
+            {
+                echo self::$p;
+                echo self::test();
+            }
+        }
+        
+        $obj = new Test1();
+        $obj->test1();
+        //此时：Fatal error: Constructor Test::test() cannot be static in
+
+
+加上构造函数：
+
+    class Test
+    {
+        public $pi = 3.14;
+        public static $p  = 3.14;
+        
+        public function __construct()
+        {
+        }
+    
+        public static function test()
+        {
+            echo self::$p;
+        }
+    
+        public function test2()
+        {
+            self::test();
+        }
+    }
+    
+    $obj = new Test();
+    $obj->test2();
+    此时：3.14
+
+静态方法可以调用静态方法和属性，不能调用非静态方法和属性。
+非静态方法有构造函数后可以调用静态方法和属性，能调用非静态方法和属性。
