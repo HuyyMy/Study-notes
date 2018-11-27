@@ -10,8 +10,7 @@
     
     2.1、编辑master的my.cnf文件
         vim /etc/my.cnf
-
-![image][./img/1.png]
+<img src='./img/1.png'>
 
     sever-id=63:用户标识唯一数据库，我设置的与我ip最后一段相同；
     bin-ignore-db:同步时忽略的数据库（多个则添加多个）
@@ -24,13 +23,13 @@
     
     
     2.2、添加一个具有replication slave权限的用户  
- ![image][./img/2.png]
+ <img src='./img/2.png'>
 
     2.3、重启mysql：service mysql restart
          然后连接：mysql -uroot -p
          执行：show master base
          
- ![image][./img/3.png]
+<img src='./img/3.png'>
  
     file：指定的日志文件
     position：指定位置
@@ -41,19 +40,18 @@
      3.1、编辑slave的my.cnf文件
             vim /etc/my.cnf
 
-
-![image][./img/4.png]
+<img src='./img/4.png'>
     
     然后进入mysql，执行
     
-![image][./img/5.png]
+<img src='./img/5.png'>
 
     重启slave库，进入数据台，执行：show slave status \G
     
-![image][./img/6.png]
+<img src='./img/6.png'>
 
     当Slave_IO_Running:Yes
       Slave_SQL_Running:Yes时说明配置成功，如下图
       
-![image][./img/7.png]
-![image][./img/8.png]
+<img src='./img/7.png'>
+<img src='./img/8.png'>
