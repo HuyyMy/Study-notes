@@ -1,9 +1,5 @@
 <?php
-/**
- * Class Deque
- *
- * 双向队列
- */
+
 
 class Deque
 {
@@ -45,6 +41,26 @@ class Deque
         array_pop($this->queue);
     }
 
+    /**
+     * 获取队头
+     *
+     * @return mixed
+     */
+    public function getFirst()
+    {
+        return reset($this->queue);
+    }
+
+    /**
+     * 获取队尾
+     *
+     * @return mixed
+     */
+    public function getEnd()
+    {
+        return end($this->queue);
+    }
+
     public function show()
     {
         foreach ($this->queue as $item) {
@@ -59,6 +75,8 @@ $deque->addFirst(2);
 $deque->addLast(3);
 $deque->addLast(4);
 $deque->addFirst(5);
-$deque->show();
+//$deque->show();
+$deque->getEnd();
+$deque->getFirst();
 
 // 结果 ：5 2 3 4 
